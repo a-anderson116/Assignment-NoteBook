@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD79851E29954F5900783D52 /* AddAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD79851D29954F5900783D52 /* AddAssignment.swift */; };
+		ADE02AF72992A8F1008490FF /* AssignmentNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE02AF62992A8F1008490FF /* AssignmentNotebook.swift */; };
 		ADE426EF298C0E0D0049CA00 /* Assignment_NoteBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE426EE298C0E0D0049CA00 /* Assignment_NoteBookApp.swift */; };
 		ADE426F1298C0E0D0049CA00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE426F0298C0E0D0049CA00 /* ContentView.swift */; };
 		ADE426F3298C0E0F0049CA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE426F2298C0E0F0049CA00 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD79851D29954F5900783D52 /* AddAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignment.swift; sourceTree = "<group>"; };
+		ADE02AF62992A8F1008490FF /* AssignmentNotebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentNotebook.swift; sourceTree = "<group>"; };
 		ADE426EB298C0E0D0049CA00 /* Assignment NoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment NoteBook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE426EE298C0E0D0049CA00 /* Assignment_NoteBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_NoteBookApp.swift; sourceTree = "<group>"; };
 		ADE426F0298C0E0D0049CA00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +55,10 @@
 		ADE426ED298C0E0D0049CA00 /* Assignment NoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				AD79851D29954F5900783D52 /* AddAssignment.swift */,
 				ADE426EE298C0E0D0049CA00 /* Assignment_NoteBookApp.swift */,
 				ADE426F0298C0E0D0049CA00 /* ContentView.swift */,
+				ADE02AF62992A8F1008490FF /* AssignmentNotebook.swift */,
 				ADE426F2298C0E0F0049CA00 /* Assets.xcassets */,
 				ADE426F4298C0E0F0049CA00 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD79851E29954F5900783D52 /* AddAssignment.swift in Sources */,
 				ADE426F1298C0E0D0049CA00 /* ContentView.swift in Sources */,
 				ADE426EF298C0E0D0049CA00 /* Assignment_NoteBookApp.swift in Sources */,
+				ADE02AF72992A8F1008490FF /* AssignmentNotebook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
