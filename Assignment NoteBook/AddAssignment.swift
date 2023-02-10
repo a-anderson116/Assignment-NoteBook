@@ -28,12 +28,12 @@ struct AddAssignment: View {
             .navigationBarTitle("Add New Assignment", displayMode: .inline)
             .navigationBarItems(trailing: Button("Save"){
                 if importance.count > 0 && description.count > 0{
-                    let Assignment = Assignment(id: UUID(), importance: importance,
-                                        description: description, dueDate: dueDate)
+                    let Assignment = Assignment(id: UUID(), importance: importance, description: description, dueDate: dueDate)
                     assignment.Assignments.append(Assignment)
                     presentationMode.wrappedValue.dismiss()
                 }
             })
+            
         }
     }
 }

@@ -10,12 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var assignmentNotebook = AssignmentNotebook()
     @State private var showingAddAssignmentView = false
-    private var assignments:[Assignment] = []
-    
     var body: some View {
         NavigationView{
             List{
-                ForEach(assignments){
+                ForEach(assignmentNotebook.Assignments){
                     Assignment in HStack{
                         VStack(alignment: .leading){
                             Text(Assignment.importance)
