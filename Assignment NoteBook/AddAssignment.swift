@@ -16,24 +16,23 @@ struct AddAssignment: View {
     static let importances = [ "Very Important", "Kinda Important", "Wait that was due 3 weeks ago?!"]
     var body: some View {
         NavigationView{
-            Form{
-                Picker("importance", selection: $importance){
-                    ForEach(Self.importances, id: \.self){
-                        importance in Text(importance)
+                Form{
+                    Picker("importance", selection: $importance){
+                        ForEach(Self.importances, id: \.self){
+                            importance in Text(importance)
+                        }
                     }
+                    TextField("Description", text: $description)
+                    DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
                 }
-                TextField("Description", text: $description)
-                DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
-            }
-            .navigationBarTitle("Add New Assignment", displayMode: .inline)
-            .navigationBarItems(trailing: Button("Save"){
-                if importance.count > 0 && description.count > 0{
-                    let Assignment = Assignment(id: UUID(), importance: importance, description: description, dueDate: dueDate)
-                    assignment.Assignments.append(Assignment)
-                    presentationMode.wrappedValue.dismiss()
-                }
-            })
-            
+                .navigationBarTitle("Add New Assignment", displayMode: .inline)
+                .navigationBarItems(trailing: Button("Save"){
+                    if importance.count > 0 && description.count > 0{
+                        let Assignment = Assignment(id: UUID(), importance: importance, description: description, dueDate: dueDate)
+                        assignment.Assignments.append(Assignment)
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                })
         }
     }
 }
