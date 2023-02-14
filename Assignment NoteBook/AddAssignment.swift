@@ -13,9 +13,11 @@ struct AddAssignment: View {
     @State private var description = ""
     @State private var dueDate = Date()
     @Environment(\.presentationMode) var presentationMode
-    static let importances = [ "Very Important", "Kinda Important", "Wait that was due 3 weeks ago?!"]
+    static let importances = [ "Math", "Social Studies", "Sciences", "Computer Science", "English", "Foreign Language"]
     var body: some View {
-        NavigationView{
+        ZStack
+        {
+            NavigationView{
                 Form{
                     Picker("importance", selection: $importance){
                         ForEach(Self.importances, id: \.self){
@@ -33,6 +35,9 @@ struct AddAssignment: View {
                         presentationMode.wrappedValue.dismiss()
                     }
                 })
+                .accentColor(.cyan)
+                .background(Color.mint)
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
             NavigationView{
                 ZStack{
-                    
+                
                 List{
                     ForEach(assignmentNotebook.Assignments){
                         Assignment in HStack{
@@ -40,6 +40,9 @@ struct ContentView: View {
                         Image(systemName: "plus")
                     })
             }
+                .accentColor(.black)
+                .background(Color.indigo)
+                .scrollContentBackground(.hidden)
         }
     }
 }
